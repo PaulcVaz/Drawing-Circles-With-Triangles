@@ -1,0 +1,10 @@
+function DrawCircle (x,y,radious){
+  let vertices = 10;                               // Number of polygon's vertices
+  let positions = [];                              // Positions stores the coordinates of all vertices [(x1,y1),(x2,y2), ... (xn,yn)]
+  let angle = (2* PI) / vertices                   // PI must be imported from an external math library;
+  if (vertices < 3){return}                        // Abort the render if the number of vertices is smaller than 3 (a single triangle)
+for (let i = 0; i < vertices; i++ ){
+  positions.push((cos(a*i)*radious + x, sin(a*i)*radious + y);
+  if (i >= 3){triangle(positions[0][0],positions[0][1],positions[i-1][0],positions[i-1][1],positions[i][0],positions[i][1])}
+  // triangle must be a function to render a triangle that recieves the coordinates as parameters (x1,y1,x2,y2,x3,y3) 
+}
